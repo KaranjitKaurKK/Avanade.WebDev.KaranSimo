@@ -1,0 +1,14 @@
+[
+  {
+    "contactId": 1,
+    "contactName": "Simona Loperfido",
+    "Email": "simona.loperfido@avanade.com",
+    "PhoneNumber": "232344883"
+  },
+  {
+    "contactId": 2,
+    "contactName": "Karanjit Kaur",
+    "Email": "karanjit.kaur@avanade.com",
+    "PhoneNumber": "232344883"
+  }
+]
