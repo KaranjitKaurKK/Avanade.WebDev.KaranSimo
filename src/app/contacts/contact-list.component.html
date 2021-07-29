@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class='table-responsive'>
-            <table class='table' *ngIf='products.length'>
+            <table class='table' *ngIf='contacts.length'>
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -25,7 +25,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor='let product of filteredContacts'>
+                    <tr *ngFor='let contact of filteredContacts'>
                         <td>
                             <a [routerLink]="['/contacts', contact.contactId]">
                                 {{contact.contactName}}

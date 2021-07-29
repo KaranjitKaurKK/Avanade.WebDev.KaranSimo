@@ -10,6 +10,9 @@ import { Component } from '@angular/core';
       <li><a class='nav-link' routerLink='/products'>Contacts</a></li>
     </ul>
   </nav>
+  <div class='container'>
+    <router-outlet></router-outlet>
+  </div>
   `
 })
 export class AppComponent {
