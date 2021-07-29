@@ -20,9 +20,9 @@ import { ContactListComponent } from './contacts/contact-list.component';
   imports: [
     BrowserModule,
     NgbModule,
-    FontAwesomeModule, 
-    FormsModule, 
     HttpClientModule, 
+    FontAwesomeModule, 
+    FormsModule,   
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
