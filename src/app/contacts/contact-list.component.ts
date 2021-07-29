@@ -12,7 +12,7 @@ import { ContactService } from './contact.service';
 
 export class ContactListComponent implements OnInit {
   public pageTitle = 'CONTACT';
-
+  errorMessage:string='';
   private _listFilter: string = '';
   get listFilter(): string {
     return this._listFilter;
@@ -34,10 +34,16 @@ export class ContactListComponent implements OnInit {
     return this.contacts.filter((contact: IContact) =>
       contact.contactName.toLocaleLowerCase().includes(filterBy));
   }
-  
+
   ngOnInit(): void {
-    this.contacts = this.contactService.getContacts();
-    this.filteredContacts = this.contacts;
+    this.contactService.getContacts().subscribe({
+      next: contacts => {
+        this.contacts=contacts;
+        this.filteredContacts = this.contacts;
+      }, 
+      error: err => this.errorMessage=err
+    });
+    
   }
 
   onBack(): void {
