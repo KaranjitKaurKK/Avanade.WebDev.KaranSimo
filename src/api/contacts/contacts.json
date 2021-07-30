@@ -60,7 +60,7 @@
         "TalentComunity": "Human Resources"
     },
     {
-        "d": 6,
+        "Id": 6,
         "Name": "Alexandru Gabriel", 
         "Surname":  "Ouatu",
         "Email": "alexandru.ouatu@avanade.com",
@@ -71,7 +71,7 @@
         "TalentComunity": "Software Engineering - Web Dev"
     },
     {
-        "contactId": 7,
+        "Id": 7,
         "Name": "Ilaria", 
         "Surname":  "Bonelli",
         "Email": "ilaria.bonelli@avanade.com",

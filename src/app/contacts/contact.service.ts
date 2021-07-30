@@ -20,6 +20,8 @@ export class ContactService {
         );
     }
 
+    
+    
     private handleError(err: HttpErrorResponse) {
         let errorMessage = '';
         if (err.error instanceof ErrorEvent) {

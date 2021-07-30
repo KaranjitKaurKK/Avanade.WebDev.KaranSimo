@@ -12,32 +12,30 @@ import { ContactService } from './contact.service';
 
 export class ContactDetailComponent implements OnInit {
   pageTitle: string = "CONTACT DETAILS";
-  contact: IContact | undefined;
+  contact: IContact | undefined; //=<IContact>{};
   errorMessage: string = '';
+  contacts: IContact[] = [];
+  id:number=0;
 
 
   constructor(private contactService: ContactService, private route: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.pageTitle += `: ${id}`;
- 
-    this.contact={  
-      "Id": 8,
-      "Name": "Graziella", 
-      "Surname":  "Caputo",
-      "Email": "graziella.caputo@avanade.com",
-      "PhoneNumber": "313444233", 
-      "DateOfBirth": "August 29th, 1995", 
-      "Address": "Via Fatebenefratelli 21, Palinuro",
-      "Role":"Intern",
-      "RoleFamily": "Back-end",
-      "TalentComunity": "CRM"
-    };
-  }
+    this.id = Number(this.route.snapshot.paramMap.get('id'));
+    this.pageTitle += `: ${this.id}`;
 
-  onBack(): void {
-    this.router.navigate(['/contact-list']);
-  }
+    this.contactService.getContacts().subscribe({
+      next: contact => {
+        this.contacts=contact;
+        this.contact=this.contacts.find(item=>item.Id===this.id);
+        console.error('result=', this.contact)
+      }, 
+      error: err => this.errorMessage=err
+    });
+}
+
+onBack(): void {
+  this.router.navigate(['/contact-list']);
+}
 }
