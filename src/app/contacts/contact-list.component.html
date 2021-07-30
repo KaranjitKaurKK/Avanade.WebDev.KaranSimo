@@ -1,10 +1,10 @@
 <div class='card'>
     <div class='card-header'>
-        CONTACTS
+        <h5 class="card-title">{{pageTitle}}</h5>
     </div>
     <div class='card-body'>
         <div class='row'>
-            <div class='col-md-2'>Filter by:</div>
+            <div class='col-md-2'>Filter by name:</div>
             <div class='col-md-4'>
                 <input type='text' [(ngModel)]='listFilter'/>
             </div>
@@ -18,16 +18,22 @@
             <table class='table'*ngIf='contacts.length'>
                 <thead>
                     <tr>
-                        <th>Name: </th>
-                        <th>Email: </th>
-                        <th>PhoneNumber: </th>
+                        <th>Employee</th>
+                        <th>Role</th>
+                        <th>RoleFamily</th>
+                        <th>Talent Community</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor='let contact of filteredContacts'>
-                        <td>{{contact.contactName}}</td>
-                        <td>{{contact.Email}}</td>
-                        <td>{{contact.PhoneNumber}}</td>
+                        <td>
+                            <a [routerLink]="['/contact-list', contact.Id]">
+                                {{contact.Name + ' ' + contact.Surname}}
+                            </a>     
+                        </td>
+                        <td>{{contact.Role}}</td>
+                        <td>{{contact.RoleFamily}}</td>
+                        <td>{{contact.TalentComunity}}</td>
                     </tr>
                 </tbody>
             </table>

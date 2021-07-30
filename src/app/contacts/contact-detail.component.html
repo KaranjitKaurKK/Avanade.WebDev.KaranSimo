@@ -1,0 +1,52 @@
+<div class='card'>
+    <div class='card-header'>
+        <h5 class="card-title">{{pageTitle + ' ' + contact?.Name + ' ' +contact?.Surname}}</h5>
+    </div>
+    <div class='card-body' *ngIf='contact'>
+        <div class="row">
+            <div class='col-md-8'>
+                <div class='row'>
+                    <div class='col-md-4'>Name: </div>
+                    <div class='col-md-8'>{{contact.Name}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Surname: </div>
+                    <div class='col-md-8'>{{contact.Surname}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Email: </div>
+                    <div class='col-md-8'>{{contact.Email}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Phone Number: </div>
+                    <div class='col-md-8'>{{contact.PhoneNumber}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Date of birth: </div>
+                    <div class='col-md-8'>{{contact.DateOfBirth}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Address: </div>
+                    <div class='col-md-8'>{{contact.Address}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Role: </div>
+                    <div class='col-md-8'>{{contact.Role}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Role Family: </div>
+                    <div class='col-md-8'>{{contact.RoleFamily}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Talent Comunity: </div>
+                    <div class='col-md-8'>{{contact.TalentComunity}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='card-footer'>
+        <button class='btn btn-outline-secondary' style='width:80px' (click)='onBack()'>
+            <i class='fa fa-chevron-left'></i> Back
+        </button>
+    </div>
+</div>

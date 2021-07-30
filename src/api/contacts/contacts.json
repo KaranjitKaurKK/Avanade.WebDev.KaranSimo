@@ -1,56 +1,109 @@
 [
     {
-        "contactId": 1,
-        "contactName": "Simona Loperfido",
+        "Id": 1,
+        "Name": "Simona",
+        "Surname": "Loperfido", 
         "Email": "simona.loperfido@avanade.com",
-        "PhoneNumber": 232344883
+        "PhoneNumber": "232344883", 
+        "DateOfBirth": "January 25th, 1996", 
+        "Address": "Via XXV April 15, Matera",
+        "Role": "Intern",
+        "RoleFamily": "Front-End",
+        "TalentComunity": "Software Engineering - Web Dev"    
     },
     {
-        "contactId": 2,
-        "contactName": "Karanjit Kaur",
+        "Id": 2,
+        "Name": "Karanjit", 
+        "Surname": "Kaur",
         "Email": "karanjit.kaur@avanade.com",
-        "PhoneNumber": 313444233
+        "PhoneNumber": "313444233",
+        "DateOfBirth": "December 18th, 1995", 
+        "Address": "Via Cesare Battisti 43, Cremona",
+        "Role": "Intern",
+        "RoleFamily": "Front-End",
+        "TalentComunity": "Software Engineering - Web Dev"
     },
     {
-        "contactId": 3,
-        "contactName": "Antonio Musella",
+        "Id": 3,
+        "Name": "Antonio", 
+        "Surname":  "Musella",
         "Email": "antonio.musella@avanade.com",
-        "PhoneNumber": 123456789
+        "PhoneNumber": "123456789", 
+        "DateOfBirth": "March 14th, 1990", 
+        "Address": "Via Aldo Moro 56, Roma",
+        "Role": "Senior Consultant",
+        "RoleFamily": "Front-End",
+        "TalentComunity": "Software Engineering - Web Dev"
     }, 
     {
-        "contactId": 4,
-        "contactName": "Barbara Maran",
+        "Id": 4,
+        "Name": "Barbara", 
+        "Surname":  " Maran",
         "Email": "barbara.maran@avanade.com",
-        "PhoneNumber": 987654321
+        "PhoneNumber": "987654321", 
+        "DateOfBirth": "May 5th, 1995", 
+        "Address": "Via Altobello Melone, 12 Varese",
+        "Role": "Senior Analyst", 
+        "RoleFamily": "Talent Acquisition",
+        "TalentComunity": "Human Resources"
     },
     {
-        "contactId": 5,
-        "contactName": "Giulia Draghi",
+        "Id": 5,
+        "Name": "Giulia", 
+        "Surname":  "Draghi",
         "Email": "giulia.draghi@avanade.com",
-        "PhoneNumber": 789456123
+        "PhoneNumber": "789456123", 
+        "DateOfBirth": "June 7th, 1995", 
+        "Address": "Via Altobello Melone, 12 Varese",
+        "Role": "Intern", 
+        "RoleFamily": "Talent Acquisition",
+        "TalentComunity": "Human Resources"
     },
     {
-        "contactId": 6,
-        "contactName": "Alexandru Gabriel Ouatu",
+        "d": 6,
+        "Name": "Alexandru Gabriel", 
+        "Surname":  "Ouatu",
         "Email": "alexandru.ouatu@avanade.com",
-        "PhoneNumber": 123456789
+        "PhoneNumber": "123456789", 
+        "Address": "Via Giuseppe Verdi 75, Roma",
+        "Role": "Consultant",
+        "RoleFamily": "Front-End",
+        "TalentComunity": "Software Engineering - Web Dev"
     },
     {
         "contactId": 7,
-        "contactName": "Ilaria Bonelli",
+        "Name": "Ilaria", 
+        "Surname":  "Bonelli",
         "Email": "ilaria.bonelli@avanade.com",
-        "PhoneNumber": 232344883
+        "PhoneNumber": "232344883", 
+        "DateOfBirth": "May 24th, 1990", 
+        "Address": "Via Gaspare Aselli 78, Pavia",
+        "Role":"Intern",
+        "RoleFamily": "Back-End",
+        "TalentComunity": "Software Engineering - Ai&RPA"
     },
     {
-        "contactId": 8,
-        "contactName": "Graziella Caputo",
+        "Id": 8,
+        "Name": "Graziella", 
+        "Surname":  "Caputo",
         "Email": "graziella.caputo@avanade.com",
-        "PhoneNumber": 313444233
+        "PhoneNumber": "313444233", 
+        "DateOfBirth": "August 29th, 1995", 
+        "Address": "Via Fatebenefratelli 21, Palinuro",
+        "Role":"Intern",
+        "RoleFamily": "Back-end",
+        "TalentComunity": "CRM"
     },
     {
-        "contactId": 9,
-        "contactName": "Elvira Vereggia",
+        "Id": 9,
+        "Name": "Elvira", 
+        "Surname": " Vereggia",
         "Email": "elvira.vereggia@avanade.com",
-        "PhoneNumber": 313444233
+        "PhoneNumber": "313444233",
+        "DateOfBirth": "August 24th, 1997", 
+        "Address": "Via Sofonisba Anguissola 77, Roma",
+        "Role":"Intern",
+        "RoleFamily": "Back-end",
+        "TalentComunity": "Software Engineering - AI&RPA"
     }
 ]

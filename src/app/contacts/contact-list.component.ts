@@ -32,7 +32,7 @@ export class ContactListComponent implements OnInit {
   performFilter(filterBy: string): IContact[] {
     filterBy = filterBy.toLocaleLowerCase();
     return this.contacts.filter((contact: IContact) =>
-      contact.contactName.toLocaleLowerCase().includes(filterBy));
+      contact.Name.toLocaleLowerCase().includes(filterBy));
   }
 
   ngOnInit(): void {
@@ -49,6 +49,4 @@ export class ContactListComponent implements OnInit {
   onBack(): void {
     this.router.navigate(['/home']);
   }
-
-
 }

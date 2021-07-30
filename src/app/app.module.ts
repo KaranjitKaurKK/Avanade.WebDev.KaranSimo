@@ -9,13 +9,15 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactListComponent } from './contacts/contact-list.component';
+import { ContactDetailComponent } from './contacts/contact-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     HomeComponent, 
     AboutComponent, 
-    ContactListComponent 
+    ContactListComponent, 
+    ContactDetailComponent 
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { ContactListComponent } from './contacts/contact-list.component';
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contact-list', component: ContactListComponent },
+      { path: 'contact-list/:id', component: ContactDetailComponent },
       { path: '', redirectTo:'home', pathMatch:'full' },
       { path: '*', redirectTo:'home', pathMatch:'full' }
     ])
